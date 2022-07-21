@@ -1,8 +1,3 @@
-FROM amazonlinux:2
-LABEL maintainer="Raf Szuminski"
-LABEL version="0.1"
-LABEL description="Modified Amazon Linux 2 image for AWS Amplify deployments. Fixes newer deployment issues."
-
 # Use the standard Amazon Linux base, provided by ECR/KaOS
 # It points to the standard shared Amazon Linux image, with a versioned tag.
 FROM amazonlinux:2
@@ -63,10 +58,9 @@ RUN yum -y update && \
         libxslt-devel \
         libyaml \
         libyaml-devel \
-        openssl11 \
-        openssl11-devel \
         make \
         nss-devel \
+        openssl-devel \
         openssh-clients \
         patch \
         procps \
