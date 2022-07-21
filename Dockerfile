@@ -18,4 +18,4 @@ RUN yum makecache fast \
       python3-pip \
  && yum clean all
 
-CMD ["/usr/sbin/init"]
+CMD ["/usr/sbin/init"]Error saving credentials: error storing credentials - err: exit status 1, out: `error storing credentials - err: exit status 1, out: `pass not initialized: exit status 1: Error: password store is empty. Try "pass init".``
