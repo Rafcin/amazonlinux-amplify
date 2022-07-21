@@ -67,7 +67,6 @@ RUN yum -y update && \
         openssl11-devel \
         make \
         nss-devel \
-        openssl-devel \
         openssh-clients \
         patch \
         procps \
