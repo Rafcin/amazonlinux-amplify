@@ -115,15 +115,6 @@ WORKDIR Python-3.9.0
 RUN ./configure --enable-optimizations --prefix=/usr/local
 RUN make altinstall
 
-## Install Openssl 1.1.1
-RUN wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz
-RUN tar xvf openssl-1.1.1o.tar.gz
-WORKDIR openssl-1.1.1o
-RUN ./config
-RUN make
-RUN make test
-RUN make install
-
 ## Install Node
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 RUN /bin/bash -c ". ~/.nvm/nvm.sh && \
